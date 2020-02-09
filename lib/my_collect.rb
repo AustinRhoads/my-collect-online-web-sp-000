@@ -1,7 +1,9 @@
 def my_collect(array)
+col =[]
 i = 0
 while i < array.count
-yield(array)
+col.push(yield(array))
 i +=1
 end
+return col
 end
